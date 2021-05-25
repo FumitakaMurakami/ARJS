@@ -31,6 +31,10 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
   >
+  <a-assets>
+    <a-asset-item id="sample" src="https://fumitakamurakami.github.io/ARJS/100yen_002.glb"></a-asset-item>
+    <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+  </a-assets>
     <a-nft
       type="nft"
       url="https://fumitakamurakami.github.io/ARJS/1000en"
@@ -44,10 +48,6 @@
         scale="5 5 5"
         position="50 150 0"
       > -->
-        <a-assets>
-          <a-asset-item id="sample" src="https://fumitakamurakami.github.io/ARJS/100yen_002.glb"></a-asset-item>
-          <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
-        </a-assets>
   
         <a-entity
           gltf-model="#sample"
