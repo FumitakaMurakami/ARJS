@@ -39,11 +39,36 @@
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-      <a-entity
+      <!-- <a-entity
         gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
         scale="5 5 5"
         position="50 150 0"
-      >
+      > -->
+        <a-assets>
+          <a-asset-item id="sample" src="./100yen_002.glb"></a-asset-item>
+          <!-- htmlが入っているフォルダにglbファイルを入れて、src=""にglbファイルのファイル名を入力 -->
+        </a-assets>
+  
+        <a-entity
+          gltf-model="#sample"
+          position="0 0 -4"
+          scale="10 10 10"
+        ></a-entity>
+        <a-entity
+          gltf-model="#sample"
+          position="1 0.5 -4"
+          scale="10 10 10"
+        ></a-entity>
+        <a-entity
+          gltf-model="#sample"
+          position="3.5 0 -4"
+          scale="10 10 10"
+        ></a-entity>
+        <a-entity
+          gltf-model="#sample"
+          position="5 0 -1"
+          scale="10 10 10"
+        ></a-entity>
       </a-entity>
     </a-nft>
     <a-entity camera></a-entity>
