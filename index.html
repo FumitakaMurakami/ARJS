@@ -8,13 +8,13 @@
         alert("カメラに1000円札を写してみよう");
       });
   }; */
-  function clear() {
-    let inf = document.getElementsById("info");
+  let inf = document.getElementsById("info");
+  let fnc = function clear() {
     console.log(inf);
     inf[1].classList.toggle("after-loader");
     console.log("1");
-  }
-  window.setTimeout(clear, 10000);
+  };
+  window.setTimeout(fnc, 10000);
 </script>
 
 <style>
