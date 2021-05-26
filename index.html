@@ -26,7 +26,7 @@
         let markerId = marker.id;
         console.log("markerFound", markerId);
         let sub = document.getElementById("sub");
-        sub.innerHTML = "<h1>1000円札を読み込みました！</h1>";
+        sub.innerHTML = "<div>1000円札を読み込みました！</div>";
       });
 
       // マーカーを見失ったイベントの登録
@@ -34,7 +34,7 @@
         let markerId = marker.id;
         console.log("markerLost", markerId);
         let sub = document.getElementById("sub");
-        sub.innerHTML = "<h1>1000円札を見失いました…</h1>";
+        sub.innerHTML = "<div>1000円札を見失いました…</div>";
       });
     },
   });
