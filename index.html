@@ -11,6 +11,7 @@
   async function clear() {
     inf = document.getElementsByTagName("info");
     inf.removeChild(inf.children[1]);
+    console.log("1");
   }
   await window.setTimeout(clear, 10000);
 </script>
