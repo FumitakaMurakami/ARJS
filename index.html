@@ -10,7 +10,7 @@
   }; */
   async function clear() {
     inf = document.getElementsByTagName("info");
-    parent.removeChild(parent.children[1]);
+    inf.removeChild(parent.children[1]);
   }
   await window.setTimeout(clear, 10000);
 </script>
