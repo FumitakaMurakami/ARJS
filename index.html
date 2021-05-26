@@ -11,7 +11,7 @@
   function clear() {
     inf = document.getElementsByTagName("info");
     console.log(inf);
-    inf.remove();
+    inf.classList.toggle("after-loader");
     console.log("1");
   }
   window.setTimeout(clear, 10000);
@@ -48,6 +48,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .after-loader {
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
   }
   .buttons {
     position: absolute;
