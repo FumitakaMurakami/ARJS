@@ -29,6 +29,11 @@
         let sub = document.getElementById("sub");
         console.log(sub);
         sub.innerHTML = "<div>1000円札を読み込みました！</div>";
+        let coin = document.getElementById("coin");
+        coin.setAttribute(
+          "animation",
+          "property: rotation; to: 0 360 0; loop: true; dur: 10000"
+        );
       });
 
       // マーカーを見失ったイベントの登録
@@ -139,6 +144,7 @@
       > -->
 
       <a-entity
+        id="coin"
         gltf-model="./100yen_002.glb"
         position="30 0 -40"
         scale="100 100 100"
